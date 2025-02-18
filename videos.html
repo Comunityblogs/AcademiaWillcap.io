@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia de Matemática Wil-Cap</title>
+  <link rel="shortcut icon" href="/466142408_8788799294513983_946169045308710962_n.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="styles-video-v67.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Academia de Matemática Wil-Cap</h1>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="math-animation">∫ 𝑥² dx = 𝑥³/3 + C</div>
+    <div class="math-animation">√(a² + b²)</div>
+    <div class="math-animation">lim x→∞ (1/x) = 0</div>
+  </div>
+
+  <!-- Navegación -->
+  <nav>
+    <div>
+      <a href="/index.html">Inicio</a>
+      <a href="/videos.html">Videos</a>
+      <a href="/contactanos.html">Contacto</a>
+    </div>
+    <div>
+      <button class="login-btn" onclick="openLoginModal()">Iniciar Sesión</button>
+      <button class="register-btn">Inscríbete</button>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container">
+    <section id="videos" class="video-section">
+      <h2>Nuestros Videos</h2>
+      <div class="video-item">
+        <div class="video-container">
+          <video id="video1" src="/AQMaSzDPN6oh0qEMMW4b-wOpUxcibqBXTZ2XYBCEQP6wokzjBL6MtAFnNRVLIi4Z86eyd8_M6aoaYHkfd27aMvDl.mp4" tabindex="0"></video>
+          <div class="controls">
+            <button onclick="togglePlayPause('video1')">▶️</button>
+            <div class="progress-bar" onclick="seekVideo(event, 'video1')">
+              <div class="progress-bar-fill" id="progress1"></div>
+            </div>
+            <div class="volume-control">
+              <button onclick="toggleMute('video1')">🔇</button>
+              <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value, 'video1')">
+            </div>
+          </div>
+        </div>
+        <div class="video-item-content">
+          <h2>Introducción a la Academia</h2>
+          <p>Aprende los conceptos básicos del álgebra con ejemplos prácticos.</p>
+        </div>
+      </div>
+      <div class="video-item">
+        <div class="video-container">
+          <video id="video2" src="/AQOFapcHwhXuSgw913pmOJg6U-FMYkaef90UUaM_FbX95RMuMF4mrvX8m2-bsOKtlWJVZMgByc4f0Y0rnmdiBMhM.mp4" tabindex="0"></video>
+          <div class="controls">
+            <button onclick="togglePlayPause('video2')">▶️</button>
+            <div class="progress-bar" onclick="seekVideo(event, 'video2')">
+              <div class="progress-bar-fill" id="progress2"></div>
+            </div>
+            <div class="volume-control">
+              <button onclick="toggleMute('video2')">🔇</button>
+              <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value, 'video2')">
+            </div>
+          </div>
+        </div>
+        <div class="video-item-content">
+          <h2>Derivación de funciones por intuición</h2>
+          <p>Descubre la Derivación de funciones por intuición.</p>
+        </div>
+      </div>
+      <div class="video-item">
+        <div class="video-container">
+          <video id="video3" src="/AQNkk3BRb1kaWV-9U6dlbafyzIKcI3AZ4vUesruiOWhvcDcJSiekBpUikhF-mQWAyZdMR-3smKzKNJ51XMEzTgfB.mp4"></video>
+          <div class="controls">
+            <button onclick="togglePlayPause('video3')">▶️</button>
+            <div class="progress-bar" onclick="seekVideo(event, 'video3')">
+              <div class="progress-bar-fill" id="progress3"></div>
+            </div>
+            <div class="volume-control">
+              <button onclick="toggleMute('video3')">🔇</button>
+              <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value, 'video3')">
+            </div>
+          </div>
+        </div>
+        <div class="video-item-content">
+          <h2>Permutaciones y Combinaciones</h2>
+          <p>Descubre Permutaciones y Combinaciones</p>
+        </div>
+      </div>
+      <div class="video-item">
+        <div class="video-container">
+          <video id="video4" src="/AQMi3CfMYs1Muk9KPnG-HAD8Ih3-XvGYikAqXfdVw6T_OH_YYIRb2JuYybRJCyLtPZMgPkTIUw0IK999bI281a3L.mp4"></video>
+          <div class="controls">
+            <button onclick="togglePlayPause('video4')">▶️</button>
+            <div class="progress-bar" onclick="seekVideo(event, 'video4')">
+              <div class="progress-bar-fill" id="progress3"></div>
+            </div>
+            <div class="volume-control">
+              <button onclick="toggleMute('video4')">🔇</button>
+              <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value, 'video3')">
+            </div>
+          </div>
+        </div>
+        <div class="video-item-content">
+          <h2>Inecuaciones con dos variables</h2>
+          <p> Descubre Inecuaciones con dos variables</p>
+        </div>
+      </div>
+      <div class="video-item">
+        <div class="video-container">
+          <video id="video5" src="/AQMy62Adqygk2AgzqMixI5Ig2uWY-B1_xW0PzI-Uu5JPWoLaKqZWCWKl4NcQ5MsRFiEVYIIVZGHLjY5hGd_qLxb5.mp4"></video>
+          <div class="controls">
+            <button onclick="togglePlayPause('video5')">▶️</button>
+            <div class="progress-bar" onclick="seekVideo(event, 'video5')">
+              <div class="progress-bar-fill" id="progress3"></div>
+            </div>
+            <div class="volume-control">
+              <button onclick="toggleMute('video5')">🔇</button>
+              <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value, 'video3')">
+            </div>
+          </div>
+        </div>
+        <div class="video-item-content">
+          <h2>Radicación de Radicales</h2>
+          <p>Descubre Radicación de Radicales</p>
+        </div>
+      </div>
+      <div class="video-item">
+        <div class="video-container">
+          <video id="video5" src="/AQOWlxrbyLKhuWsEMfH9VThEgbUx-SEQcuvaMprsdGy4TgVAlSRZQhiTmakxmsKjzJkGCg4duvEm8NbAj1uas3Jr.mp4"></video>
+          <div class="controls">
+            <button onclick="togglePlayPause('video6')">▶️</button>
+            <div class="progress-bar" onclick="seekVideo(event, 'video6')">
+              <div class="progress-bar-fill" id="progress3"></div>
+            </div>
+            <div class="volume-control">
+              <button onclick="toggleMute('video6')">🔇</button>
+              <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value, 'video3')">
+            </div>
+          </div>
+        </div>
+        <div class="video-item-content">
+          <h2>Sistema de dos ecuaciones con dos incógnitas</h2>
+          <p>Descubre Sistema de dos ecuaciones con dos incógnitas</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Academia de Matemática Wil-Cap</p>
+    <div>
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+  </footer>
+
+  <!-- Modal de Inicio de Sesión -->
+  <div id="loginModal" class="login-modal">
+    <div class="login-modal-content">
+      <span onclick="closeLoginModal()" style="float: right; cursor: pointer;">&times;</span>
+      <h2>Iniciar Sesión</h2>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Ingresar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Chatbot -->
+  <div class="chatbot" onclick="toggleChatbot()">
+    <img src="/466142408_8788799294513983_946169045308710962_n.jpg" alt="Chatbot Icon">
+  </div>
+  <div id="chatbotContainer" class="chatbot-container">
+    <h3>Chatbot de Soporte</h3>
+    <div id="chatbotMessages"></div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbotInput" placeholder="Escribe un mensaje..." />
+      <button onclick="sendMessage()">Enviar</button>
+    </div>
+    <h4>Desarrollado by Jhon Gomez</h4>
+  </div>
+  <script src="/popup-login-lbv23-.v4.js"></script>
+  <script src="/events-bot-v4556.v7v4.js"></script>
+  <script src="/event-control-video.v3-445.v5.js"></script>
+</body>
+</html>

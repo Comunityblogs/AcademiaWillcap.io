@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia de Matemática Wil-Cap</title>
+  <link rel="shortcut icon" href="/466142408_8788799294513983_946169045308710962_n.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="styles-contact-v653-v5.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Academia de Matemática Wil-Cap</h1>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="math-animation">∫ 𝑥² dx = 𝑥³/3 + C</div>
+    <div class="math-animation">√(a² + b²)</div>
+    <div class="math-animation">lim x→∞ (1/x) = 0</div>
+  </div>
+
+  <!-- Navegación -->
+  <nav>
+    <div>
+      <a href="/index.html">Inicio</a>
+      <a href="/videos.html">Videos</a>
+      <a href="/contactanos.html">Contacto</a>
+    </div>
+    <div>
+      <button class="login-btn" onclick="openLoginModal()">Iniciar Sesión</button>
+      <button class="register-btn">Inscríbete</button>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container">
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact-section">
+      <h2>Contacto</h2>
+      <div class="contact-info">
+        <div>📞 Teléfono: +593 93 959 5226</div>
+        <div>📍 Dirección: Unidad Educativa Espiritu de Sabiduria (UEES)</div>
+      </div>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 Academia de Matemática Wil-Cap</p>
+    <div>
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+  </footer>
+  <div id="loginModal" class="login-modal">
+    <div class="login-modal-content">
+      <span onclick="closeLoginModal()" style="float: right; cursor: pointer;">&times;</span>
+      <h2>Iniciar Sesión</h2>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Ingresar</button>
+      </form>
+    </div>
+  </div>
+  <div class="chatbot" onclick="toggleChatbot()">
+    <img src="/466142408_8788799294513983_946169045308710962_n.jpg" alt="Chatbot Icon">
+  </div>
+  <div id="chatbotContainer" class="chatbot-container">
+    <h3>Chatbot de Soporte</h3>
+    <div id="chatbotMessages"></div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbotInput" placeholder="Escribe un mensaje..." />
+      <button onclick="sendMessage()">Enviar</button>
+    </div>
+    <h4>Desarrollado by Jhon Gomez</h4>
+  </div>
+  <script src="/popup-login-lbv23-.v4.js"></script>
+  <script src="/events-bot-v4556.v7v4.js"></script>
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert('¡Gracias por contactarnos! Nos pondremos en contacto pronto.');
+      event.target.reset(); 
+    }
+  </script>
+</body>
+</html>

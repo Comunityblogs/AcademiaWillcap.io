@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia de Matemática Wil-Cap</title>
+  <link rel="shortcut icon" href="/466142408_8788799294513983_946169045308710962_n.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Academia de Matemática Wil-Cap</h1>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="math-animation">∫ 𝑥² dx = 𝑥³/3 + C</div>
+    <div class="math-animation">√(a² + b²)</div>
+    <div class="math-animation">lim x→∞ (1/x) = 0</div>
+  </div>
+
+  <!-- Navegación -->
+  <nav>
+    <div>
+      <a href="/index.html">Inicio</a>
+      <a href="/videos.html">Videos</a>
+      <a href="/contactanos.html">Contacto</a>
+    </div>
+    <div>
+      <button class="login-btn" onclick="openLoginModal()">Iniciar Sesión</button>
+      <button class="register-btn">Inscríbete</button>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container">
+    <section id="videos" class="video-section">
+      <h2>¡Aprende Matemáticas de Forma Divertida!</h2>
+      <div class="video-item">
+        <center>
+        <img src="/466142408_8788799294513983_946169045308710962_n.jpg" alt="Video 1">
+        </center>
+        <div class="video-item-content">
+          <h2>Bienvenidos a Academia de Matemática Wil-Cap </h2>
+          <p>Te invitamos a Academia de Matemática Wil-Cap , aprende Matematicas desde lo mas basico a lo mas avanzados.</p>
+        </div>
+      </div>
+      <div class="video-item" style="display: none;">
+        <img src="https://via.placeholder.com/600x400" alt="Video 2">
+        <div class="video-item-content">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Academia de Matemática Wil-Cap</p>
+    <div>
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+  </footer>
+
+  <!-- Modal de Inicio de Sesión -->
+  <div id="loginModal" class="login-modal">
+    <div class="login-modal-content">
+      <span onclick="closeLoginModal()" style="float: right; cursor: pointer;">&times;</span>
+      <h2>Iniciar Sesión</h2>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Ingresar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Chatbot -->
+  <div class="chatbot" onclick="toggleChatbot()">
+    <img src="/466142408_8788799294513983_946169045308710962_n.jpg" alt="Chatbot Icon">
+  </div>
+  <div id="chatbotContainer" class="chatbot-container">
+    <h3>Chatbot de Soporte</h3>
+    <div id="chatbotMessages"></div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbotInput" placeholder="Escribe un mensaje..." />
+      <button onclick="sendMessage()">Enviar</button>
+    </div>
+    <h4>Desarrollado by Jhon Gomez</h4>
+  </div>
+  <script src="/popup-login-lbv23-.v4.js"></script>
+  <script src="/events-bot-v4556.v7v4.js"></script>
+</body>
+</html>
